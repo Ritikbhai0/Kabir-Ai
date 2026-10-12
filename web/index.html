@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="hi">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Sat Sahib — ज्ञान का संवाद</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<header><a class="brand" href="/" aria-label="Sat Sahib होम"><span class="symbol">स</span><span>SAT SAHIB<small>ज्ञान का संवाद</small></span></a><span class="badge"><i></i> केवल पुस्तक आधारित</span></header>
+<main>
+<section class="intro"><div class="orb-scene" aria-hidden="true"><div class="orb"></div><div class="orb orb-small"></div><div class="orbit-line"></div></div><span class="eyebrow">पढ़ें · पूछें · समझें</span><h1>Sat Sahib<span>आपका प्रश्न, पुस्तकों के प्रकाश में।</span></h1><p>संत रामपाल जी महाराज की पुस्तकों में खोजें।<br>हिंदी में पूछें और स्रोत के साथ संबंधित अंश पढ़ें या सुनें।</p><button id="welcome" class="welcome">◉ &nbsp; Sat Sahib · शुरू करें</button><span class="welcome-note">आवाज़ चालू करने के लिए एक बार दबाएँ</span></section>
+<div class="workspace">
+<section class="conversation" aria-label="प्रश्न और उत्तर">
+<div class="panel-head"><span>आपका संवाद</span><span class="small-label">PDF LIBRARY</span></div>
+<div id="messages" aria-live="polite"><div class="initial"><span class="book-icon">▤</span><h2>एक प्रश्न से शुरुआत करें</h2><p>उत्तर का आधार आपकी लाइब्रेरी की पुस्तकें होंगी।<br>संबंधित अंश न मिलने पर हम स्पष्ट बताएँगे।</p><div class="suggestions"><button data-question="भक्ति मर्यादा">भक्ति मर्यादा</button><button data-question="सृष्टि रचना">सृष्टि रचना</button><button data-question="सतगुरु">सतगुरु</button></div></div></div>
+<form id="ask-form"><label for="question">अपना प्रश्न लिखें या बोलें</label><div class="input-row"><textarea id="question" maxlength="500" rows="2" placeholder="जैसे: भक्ति मर्यादा के बारे में बताइए" required></textarea><button type="button" id="mic" title="हिंदी में बोलें" aria-label="हिंदी में बोलें"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M6 11v1a6 6 0 0 0 12 0v-1M12 18v3M9 21h6"/></svg></button><button type="submit" id="send" aria-label="प्रश्न पूछें"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 19V5m-6 6 6-6 6 6"/></svg></button></div><div class="input-footer"><span id="voice-status">हिंदी · अधिकतम 500 अक्षर</span><span>स्रोत सहित खोज</span></div></form>
+</section>
+<aside><section class="side-card"><span class="eyebrow">ज्ञान संग्रह</span><h2>आपकी लाइब्रेरी</h2><div class="book-cover"><span>संत रामपाल जी महाराज</span><strong>ज्ञान<br>गंगा</strong><span>हिंदी संस्करण</span></div><h3>ज्ञान गंगा</h3><p id="library-status">पुस्तक की स्थिति जाँची जा रही है…</p><div class="divider"></div><p class="subtle">नई पुस्तकें जोड़ने पर वे इसी ऐप में उपलब्ध होंगी।</p></section>
+<section class="side-card sound"><h2>सुनने के विकल्प</h2><label class="toggle"><input id="auto-speak" type="checkbox"> उत्तर अपने आप सुनाएँ</label><label for="voice">हिंदी आवाज़</label><select id="voice"><option value="">फ़ोन / browser की default आवाज़</option></select><label for="speed">गति <output id="speed-value">1×</output></label><input id="speed" type="range" min="0.7" max="1.3" step="0.1" value="1"><label for="pitch">स्वर <output id="pitch-value">1×</output></label><input id="pitch" type="range" min="0.7" max="1.3" step="0.1" value="1"><button id="stop-speech" class="text-button">आवाज़ रोकें</button></section></aside>
+</div>
+<footer><span>Sat Sahib · पुस्तक से सीखने का एक सरल स्थान</span><span>मुफ्त · कोई paid AI API नहीं · इंटरनेट खोज नहीं</span></footer>
+<p class="disclosure">यह शुरुआती संस्करण संबंधित पुस्तक-अंश खोजता है; नया AI उत्तर नहीं लिखता। OCR में त्रुटियाँ हो सकती हैं—मूल PDF से पुष्टि करें। Voice input आपके browser की सेवा को आवाज़ भेज सकता है।</p>
+</main></body></html>

@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: sat-sahib-assistant
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/status
+    envVars:
+      - key: ADMIN_PASSWORD
+        generateValue: true
+      - key: HF_TOKEN
+        sync: false
+      - key: HF_DATASET_REPO
+        value: ritikbhai/sat-sahib-library
+      - key: INGEST_WORKERS
+        value: "1"
+      - key: COOKIE_SECURE
+        value: "1"
+      - key: HF_HOME
+        value: /app/data/hf-cache
+      - key: OMP_THREAD_LIMIT
+        value: "1"
